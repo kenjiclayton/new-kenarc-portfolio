@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="my_style.css">
         <!-- swiper code -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- google icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
     </head>
     <body>
         <div class="slider-container">
@@ -37,16 +39,29 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Slider Pagination -->
+            <!-- Slider Pagination -->
         <div class="slider-controls">
             <ul class="slider-pagination">
+                <div class="slider-indicator"></div>
                 <li class="slider-tab">Lorem ipsum doremi pasolaty</li>
                 <li class="slider-tab">Lorem ipsum doremi pasolaty</li>
                 <li class="slider-tab">Lorem ipsum doremi pasolaty</li>
             </ul>
         </div>
+
+        <!-- prev/next -->
+        <div class="slider-navigations">
+            <button id="slide-prev" class="material-symbols-rounded">
+                arrow_left_alt
+            </button>
+            <button id="slide-next" class="material-symbols-rounded">
+                arrow_right_alt
+            </button>
+        </div>
+        </div>
+
+        
 
         <!--link swiper script-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
