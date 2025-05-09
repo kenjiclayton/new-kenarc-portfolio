@@ -8,14 +8,14 @@ const updateIndicator = (tab, index) => {
     sliderIndicator.style.width = `${tab.getBoundingClientRect().width}px`;
 
     // Scroll position and scroll smoothly
-    const scrollLeft = sliderTabs[index].offsetLeft - slider-controls. offsetWidth / 2 + sliderTabs[index].offsetWidth / 2;
-    sliderControls.scrollTo({ left: scrollLeft, behavior: "smooth"});
+    const scrollLeft = sliderTabs[index].offsetLeft - sliderControls. offsetWidth / 2 + sliderTabs[index].offsetWidth / 2;
+    sliderControls.scrollTo({ left: scrollLeft, behavior: "smooth" });
 }
 // Initialize swiper instance
 const swiper = new Swiper(".slider-container", {
     effect: "fade",
     speed: 1300,
-   // autoplay: { delay: 4000 }
+   // autoplay: { delay: 4000 },
    navigation: {
     prevEl: "#slide-prev",
     nextEl: "#slide-next"
@@ -25,7 +25,8 @@ const swiper = new Swiper(".slider-container", {
     slideChange: () => {
         const currentTabIndex = [...sliderTabs].indexOf(sliderTabs[swiper.activeIndex]);
         updateIndicator(sliderTabs[swiper.activeIndex], currentTabIndex);
-    }
+    },
+    // reachEnd: () => swiper.autoplay.stop()
    }
 });
 
