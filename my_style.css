@@ -179,7 +179,9 @@
     color: #fff;
     text-align: center;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-size: 1.0rem;
+    font-weight: 500;
+    text-transform: uppercase;
     padding: 20px 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
