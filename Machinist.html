@@ -56,7 +56,36 @@
         </div>
 
         <div class="col">
+            <div class="gallery-box">
+                <img src="Sankei/image 1.jpeg" id="gallery">
 
+                <ul>
+                    <li class="btn active">01</li>
+                    <li class="btn">02</li>
+                    <li class="btn">03</li>
+                    <li class="btn">04</li>
+                    <li class="btn">05</li>
+                    <li class="btn">06</li>
+                    <li class="btn">07</li>
+                    <li class="btn">08</li>
+                    <li class="btn">09</li>
+                    <li class="btn">10</li>
+                    <li class="btn">11</li>
+                    <li class="btn">12</li>
+                    <li class="btn">13</li>
+                    <li class="btn">14</li>
+                    <li class="btn">15</li>
+                    <li class="btn">16</li>
+                    <li class="btn">17</li>
+                    <li class="btn">18</li>
+                    <li class="btn">19</li>
+                    <li class="btn">20</li>
+                    <li class="btn">21</li>
+                    <li class="btn">22</li>
+                    <li class="btn">23</li>
+                    <li class="btn">24</li>
+                </ul>
+            </div>
         </div>
         </div>
     </div>
@@ -64,7 +93,46 @@
     
 
 
-    
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var gallery = document.getElementById("gallery");
+
+        var images = new Array (
+            "Sankei/image 1.jpeg",
+            "Sankei/image 2.jpeg",
+            "Sankei/image 3.jpeg",
+            "Sankei/image 4.jpeg",
+            "Sankei/image 5.jpeg",
+            "Sankei/image 6.jpeg",
+            "Sankei/image 7.jpeg",
+            "Sankei/image 8jpeg",
+            "Sankei/image 9.jpeg",
+            "Sankei/image 10.jpeg",
+            "Sankei/image 11.jpeg",
+            "Sankei/image 12.jpeg",
+            "Sankei/image 13.jpeg",
+            "Sankei/image 14.jpeg",
+            "Sankei/image 15.jpeg",
+            "Sankei/image 16.jpeg",
+            "Sankei/image 17.jpeg",
+            "Sankei/image 18.jpeg",
+            "Sankei/image 19.jpeg",
+            "Sankei/image 20.jpeg",
+            "Sankei/image 21.jpeg",
+            "Sankei/image 22.jpeg",
+            "Sankei/image 23.jpeg",
+            "Sankei/image 24.jpeg"
+        );
+
+        for (let i=0; i<btn.length; i++){
+            btn[i].onclick = function(){
+                gallery.src = images[i];
+                let current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += "active";
+            };
+        }
+    </script>
 
 </body>
 </html>
