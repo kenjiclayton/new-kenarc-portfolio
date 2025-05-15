@@ -8,131 +8,46 @@
     </head>
 <body>
 
-    <div class="container">
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="my_portfolio.html">Kenneth Arceo Cayton - Machinist</a></li>
-                </ul>
-            </nav>
-            <!--<ul>
-                <li><img src="Sankei/image 1.jpeg"></li>
-                <li><img src="Sankei/image 2.jpeg"></li>
-                <li><img src="Sankei/image 3.jpeg"></li>
-                <li><img src="Sankei/image 4.jpeg"></li>
-                <li><img src="Sankei/image 5.jpeg"></li>
-                <li><img src="Sankei/image 6.jpeg"></li>
-                <li><img src="Sankei/image 7.jpeg"></li>
-                <li><img src="Sankei/image 8.jpeg"></li>
-                <li><img src="Sankei/image 9.jpeg"></li>
-                <li><img src="Sankei/image 10.jpeg"></li>
-                <li><img src="Sankei/image 11.jpeg"></li>
-                <li><img src="Sankei/image 12.jpeg"></li>
-                <li><img src="Sankei/image 13.jpeg"></li>
-                <li><img src="Sankei/image 14.jpeg"></li>
-                <li><img src="Sankei/image 15.jpeg"></li>
-                <li><img src="Sankei/image 16.jpeg"></li>
-                <li><img src="Sankei/image 17.jpeg"></li>
-                <li><img src="Sankei/image 18.jpeg"></li>
-                <li><img src="Sankei/image 19.jpeg"></li>
-                <li><img src="Sankei/image 20.jpeg"></li>
-                <li><img src="Sankei/image 21.jpeg"></li>
-                <li><img src="Sankei/image 22.JPG"></li>
-                <li><img src="Sankei/image 23.JPG"></li>
-                <li><img src="Sankei/image 24.JPG"></li>
-            </ul>-->
-        </div>
+    <section class="machinist-gallery">
+        <header class="section-head">
+            <h1>Sample Of My Previous Works</h1>
+        </header>
 
-        <div class="row">
-        <div class="col">
-            <div class="text-box">
-                <h5>Our Products</h5>
-                <h1>Simplicity is the ultimate sophisticaiton</h1>
-            </div>
-            <div class="text-box">
-                <h5>Our Products</h5>
-                <h1>Simplicity is the ultimate sophisticaiton</h1>
-            </div>
-        </div>
+        <main class="mainContainer">
+            <!-- Btn Start Section -->
+             <div class="button-group">
+                <button class="button" data-filter="*">All</button>
+                <button class="button" data-filter=".sankei">Sankei Kougyou</button>
+                <button class="button" data-filter=".jamco">Jamco Phil. Inc.</button>
+             </div>
 
-        <div class="col">
-            <div class="gallery-box">
-                <img src="Sankei/image 1.jpeg" id="gallery">
+             <!-- Btn End Section -->
 
-                <ul>
-                    <li class="btn active">01</li>
-                    <li class="btn">02</li>
-                    <li class="btn">03</li>
-                    <li class="btn">04</li>
-                    <li class="btn">05</li>
-                    <li class="btn">06</li>
-                    <li class="btn">07</li>
-                    <li class="btn">08</li>
-                    <li class="btn">09</li>
-                    <li class="btn">10</li>
-                    <li class="btn">11</li>
-                    <li class="btn">12</li>
-                    <li class="btn">13</li>
-                    <li class="btn">14</li>
-                    <li class="btn">15</li>
-                    <li class="btn">16</li>
-                    <li class="btn">17</li>
-                    <li class="btn">18</li>
-                    <li class="btn">19</li>
-                    <li class="btn">20</li>
-                    <li class="btn">21</li>
-                    <li class="btn">22</li>
-                    <li class="btn">23</li>
-                    <li class="btn">24</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </div>
-    
-    
+             <!-- Gallery Start Section -->
+              <div class="gallery">
+                <!--Card 1 Start-->
+                <div class="item design">
+                    <img src="Sankei/image 1.jpeg">
+                    <div class="overlay">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <!--Card 1 End-->
+                <!--Card 2 Start-->
+                <div class="item design">
+                    <img src="Sankei/image 1.jpeg">
+                    <div class="overlay">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <!--Card 2 End-->
+              </div>
 
+             <!-- Gallery End Section -->
+        </main>
 
-    <script>
-        var btn = document.getElementsByClassName("btn");
-        var gallery = document.getElementById("gallery");
+    </section>
 
-        var images = new Array (
-            "Sankei/image 1.jpeg",
-            "Sankei/image 2.jpeg",
-            "Sankei/image 3.jpeg",
-            "Sankei/image 4.jpeg",
-            "Sankei/image 5.jpeg",
-            "Sankei/image 6.jpeg",
-            "Sankei/image 7.jpeg",
-            "Sankei/image 8jpeg",
-            "Sankei/image 9.jpeg",
-            "Sankei/image 10.jpeg",
-            "Sankei/image 11.jpeg",
-            "Sankei/image 12.jpeg",
-            "Sankei/image 13.jpeg",
-            "Sankei/image 14.jpeg",
-            "Sankei/image 15.jpeg",
-            "Sankei/image 16.jpeg",
-            "Sankei/image 17.jpeg",
-            "Sankei/image 18.jpeg",
-            "Sankei/image 19.jpeg",
-            "Sankei/image 20.jpeg",
-            "Sankei/image 21.jpeg",
-            "Sankei/image 22.jpeg",
-            "Sankei/image 23.jpeg",
-            "Sankei/image 24.jpeg"
-        );
-
-        for (let i=0; i<btn.length; i++){
-            btn[i].onclick = function(){
-                gallery.src = images[i];
-                let current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace("active", "");
-                this.className += "active";
-            };
-        }
-    </script>
 
 </body>
 </html>
