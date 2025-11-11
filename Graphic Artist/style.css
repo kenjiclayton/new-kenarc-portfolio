@@ -9,11 +9,11 @@
 }
 
 html {
-    --body-clr: #f6f9fe;
-    --primary-clr: #05555c;
-    --primary-light-clr: #eaf3fa;
-    --links-clr: #186f78;
-    --text-clr: #3f7277;
+    --body-clr: #26282B;
+    --primary-clr: #5F85DB;
+    --primary-light-clr: #90B8F8;
+    --links-clr: #5F85DB;
+    --text-clr: #90B8F8;
 }
 
 body {
@@ -80,10 +80,13 @@ div.gallery {
 
 div.gallery .item {
     position: relative;
-    margin: 4px;
-    width: calc(33.33% - 8px);
+    margin: 5px;
+    width: calc(20% - 20px);
     overflow: hidden;
     cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    border-image: Linear-gradient(45deg, #5F85DB, #5F85DB) 1;
 }
 
 .item img {
@@ -122,7 +125,7 @@ div.gallery .item:hover img {
 .item .overlay a {
     display: inline-block;
     padding: 8px 16px;
-    border: 2px solid var(--body-clr);
+    border: 3px solid var(--body-clr);
     color: var(--body-clr);
     text-decoration: none;
     font-size: 14px;
