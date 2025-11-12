@@ -8,6 +8,14 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body{
+    background-image: url(image\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 html {
     --body-clr: #26282B;
     --primary-clr: #5F85DB;
@@ -24,7 +32,7 @@ body {
 .machinist-gallery {
     width: 100%;
     padding: 30px 8%;
-    background-color: var(--body-clr);
+    /*background-color: var(--body-clr);*/
 }
 
 .machinist-gallery .section-head {
